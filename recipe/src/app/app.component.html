@@ -1,0 +1,27 @@
+
+<app-header></app-header>
+
+
+<div class="row row-cols-3 row-cols-md-3 g-4">
+  @for(x of data ; track data.id){
+  <div class="col">
+    <div class="card"   class="border border-5"  class="border border-warning">
+
+      <img [src]="x.strMealThumb" class="card-img-top" alt="...">
+      <div class="card-body bg-warning text-blue">
+        <h5 class="card-title">{{x.strArea}}</h5>
+        <div class="card-text">{{x.strCategory}}</div>
+        <div class="card-text">{{x.strMeal}}</div>
+        <a href="#" class="btn btn-primary">Go somewhere</a>
+
+      </div>
+    </div>
+      </div>
+   
+}
+</div>
+
+
+
+<app-footer></app-footer>
+<router-outlet />
